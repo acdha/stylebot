@@ -70,7 +70,7 @@ var CSSUtils = {
         if (id != undefined)
             style.setAttribute("id", id);
         style.appendChild(document.createTextNode(css));
-        document.documentElement.appendChild(style);
+        document.head.appendChild(style);
     }, 
     
     // parser object is that returned by JSCSSP
